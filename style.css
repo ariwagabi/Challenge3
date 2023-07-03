@@ -1,0 +1,162 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+	background-color: hsl(204, 43%, 93%);
+	letter-spacing: 1px;
+	color: hsl(218, 22%, 67%)
+}
+
+.bg-box {
+	display: grid;
+	width: 60%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 150px;
+}
+
+
+.up {
+	grid-column-end: span 2;
+	background-color: #fff;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 20px 14px;
+}
+
+.up-items {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	margin: 10px;
+}
+
+.dn-right {
+	background-color: hsl(179, 55%, 55%);
+	border-bottom-right-radius: 10px;
+	padding: 20px 14px;
+}
+
+.right-items {
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px 0;
+	color: hsl(204, 43%, 93%);
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+	margin: 10px;
+}
+
+.dn-left {
+	background-color: hsl(179, 62%, 43%);
+	border-bottom-left-radius: 10px;
+	padding: 20px 14px;
+}
+
+.left-items {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	margin: 10px;
+}
+
+h2 {
+	color: hsl(179, 62%, 43%);
+	font-weight: 700;
+}
+
+h3#up {
+	color: hsl(71, 73%, 54%);
+	font-weight: 700;
+}
+
+.big {
+	color: #fff;
+	font-weight: 400;
+	font-size: 40px;
+}
+
+p.big span {
+	font-size: 16px;
+	margin-left: 10px;
+	color: hsl(204, 43%, 93%);
+}
+
+h3 {
+	color: #fff;
+}
+
+p#left {
+	color: #fff;
+}
+
+.button {
+	background-color: hsl(71, 73%, 54%);
+	border-radius: 5px;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	font-weight: 700;
+}
+
+p#button {
+	margin: 15px;
+}
+
+
+@media only screen and (max-width: 750px) and (min-width: 320px) {
+
+	.bg-box {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		margin: 50px auto;
+	}
+
+	.dn-left {
+	border-bottom-left-radius: 0;
+	}
+
+	.dn-right {
+	border-bottom-left-radius: 10px;
+	}
+
+	.up-items {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .left-items { 
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .right-items {
+        margin-right: auto;
+        color: hsl(204, 43%, 93%);
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+		margin-left: 10px;
+    }
+}
